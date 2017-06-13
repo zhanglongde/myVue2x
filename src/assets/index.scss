@@ -1,0 +1,46 @@
+*{
+  margin:0;
+  padding:0;
+}
+html,body{
+  height:100%;
+  background-color: #fff;
+  color:#333;
+}
+
+button{
+  border:none;
+  outline:none;
+  border-radius:3px;
+}
+button{
+  width:100px;
+  height:40px;
+  background-color: #58a;
+  color:#fff;
+}
+
+$zindex1 = 1
+$zindex2 = 2
+
+.modal-box{
+  //position: relative;
+  height:100%;
+  width:100%;
+}
+.mask{
+  position: absolute;
+  z-index:$zindex1;
+  //铺满屏幕
+  top:0;left:0;right:0;bottom:0;
+  height:100%;
+  width:100%;
+  background-color: rgba(0,0,0,0.4);
+}
+.container{
+  position: absolute;top:0;left:0;right:0;bottom:0;margin:auto;
+  width:500px;
+  height:300px;
+  z-index:$zindex2;
+  background-color: #fff;
+}
