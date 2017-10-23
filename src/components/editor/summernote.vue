@@ -3,14 +3,15 @@
     <div ref="editor"></div>
   </div>
 </template>
-<style scoped>
-</style>
 <script>
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap'
+import 'summernote/dist/summernote.css'
+import 'summernote/dist/summernote'
 export default {
   name: 'summernote',
   data () {
-    return {
-    }
+    return {}
   },
   mounted () {
     $(this.$refs.editor).summernote({
