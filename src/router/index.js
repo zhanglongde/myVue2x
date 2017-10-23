@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import AddCard from '@/components/exe/AddCard.vue'
+import Summernote from '@/components/editor/summernote.vue'
 import Scoped from '@/components/test/scopedInherit/Parent.vue'
 
 Vue.use(Router)
@@ -22,6 +23,11 @@ export default new Router({
       path: '/test/scoped',
       name: 'scoped',
       component: Scoped
+    },
+    {
+      path: '/editor',
+      name: 'Summernote',
+      component: Summernote
     }
   ]
 })
