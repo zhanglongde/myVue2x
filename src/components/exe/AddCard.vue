@@ -32,6 +32,11 @@ export default {
        }
        this.addModal = null
     }
+  },
+  mounted () {
+    this.$message({
+      msg: 'test message'
+    })
   }
 }
 </script>
