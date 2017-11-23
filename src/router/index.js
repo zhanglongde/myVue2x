@@ -4,6 +4,9 @@ import Hello from '@/components/Hello'
 import AddCard from '@/components/exe/AddCard.vue'
 import Summernote from '@/components/editor/summernote.vue'
 import Scoped from '@/components/test/scopedInherit/Parent.vue'
+import VCell from '@/components/vux/VCell.vue'
+import VPopuppicker from '@/components/vux/VPopuppicker.vue'
+import Picker from '@/components/cube/picker.vue'
 
 Vue.use(Router)
 
@@ -28,6 +31,21 @@ export default new Router({
       path: '/editor',
       name: 'Summernote',
       component: Summernote
+    },
+    {
+      path: '/vux/cell',
+      name: 'VCell',
+      component: VCell
+    },
+    {
+      path: '/vux/popuppiker',
+      name: 'VPopuppiker',
+      component: VPopuppicker
+    },
+    {
+      path: '/cube/piker',
+      name: 'piker',
+      component: Picker
     }
   ]
 })
