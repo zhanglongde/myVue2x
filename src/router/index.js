@@ -2,11 +2,12 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import AddCard from '@/components/exe/AddCard.vue'
-import Summernote from '@/components/editor/summernote.vue'
+// import Summernote from '@/components/editor/summernote.vue'
 import Scoped from '@/components/test/scopedInherit/Parent.vue'
 import VCell from '@/components/vux/VCell.vue'
 import VPopuppicker from '@/components/vux/VPopuppicker.vue'
-import Picker from '@/components/cube/picker.vue'
+import VPicker from '@/components/vux/VPicker.vue'
+import Picker from '@/components/cube/Picker.vue'
 
 Vue.use(Router)
 
@@ -27,11 +28,11 @@ export default new Router({
       name: 'scoped',
       component: Scoped
     },
-    {
-      path: '/editor',
-      name: 'Summernote',
-      component: Summernote
-    },
+    // {
+    //   path: '/editor',
+    //   name: 'Summernote',
+    //   component: Summernote
+    // },
     {
       path: '/vux/cell',
       name: 'VCell',
@@ -41,6 +42,11 @@ export default new Router({
       path: '/vux/popuppiker',
       name: 'VPopuppiker',
       component: VPopuppicker
+    },
+    {
+      path: '/vux/picker',
+      name: 'VPicker',
+      component: VPicker
     },
     {
       path: '/cube/piker',
