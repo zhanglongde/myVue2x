@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
+import Index from '@/views/Index'
+import Hello from '@/views/Hello'
 import AddCard from '@/components/exe/AddCard.vue'
 // import Summernote from '@/components/editor/summernote.vue'
 import Scoped from '@/components/test/scopedInherit/Parent.vue'
+import Vux from '@/components/vux/Vux.vue'
 import VCell from '@/components/vux/VCell.vue'
 import VPopuppicker from '@/components/vux/VPopuppicker.vue'
 import VPicker from '@/components/vux/VPicker.vue'
@@ -15,6 +17,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'Index',
+      component: Index
+    },
+    {
+      path: '/addcard',
       name: 'AddCard',
       component: AddCard
     },
@@ -33,6 +40,11 @@ export default new Router({
     //   name: 'Summernote',
     //   component: Summernote
     // },
+    {
+      path: '/vux',
+      name: 'Vux',
+      component: Vux
+    },
     {
       path: '/vux/cell',
       name: 'VCell',
