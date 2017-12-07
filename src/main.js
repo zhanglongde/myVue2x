@@ -4,11 +4,12 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 // import Cube from 'cube-ui'
-import Message from './components/common/Message'
+
+import UIPlugins from './components'
 
 Vue.config.productionTip = false
-Vue.component(Message.name, Message)
-Vue.prototype.$message = Message
+
+Vue.use(UIPlugins)
 
 // Vue.use(Cube)
 
