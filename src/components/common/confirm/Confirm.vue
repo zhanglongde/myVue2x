@@ -2,7 +2,7 @@
   <div class="overlay confirm" v-if="isShow">
     <div class="popup">
       <div class="hd">
-        <div class="hed-icon">
+        <div class="head-icon">
           <!--<img src="../../assets/img/icon-confirm.svg" alt="icon-confirm">-->
         </div>
         <div class="hd-tittle">{{title}}</div>
@@ -12,7 +12,9 @@
     </div>
   </div>
 </template>
-
+<style scoped lang="scss">
+  @import "../../../assets/confirm.scss";
+</style>
 <script>
   export default {
     name: 'Confirm',

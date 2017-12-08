@@ -1,6 +1,6 @@
 import Vue from 'vue'
 
-let ConfirmConstructor = Vue.extend(require('./Confirm.vue').default)
+let ConfirmConstructor = Vue.extend(require('./Confirm.vue'))
 
 let instance = new ConfirmConstructor({
 }).$mount(document.createElement('div'))

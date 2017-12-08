@@ -4,12 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 // import Cube from 'cube-ui'
-
-import UIPlugins from './components'
+// import Confirm from './components/common/confirm/Confirm'
+import UIPlugins from './components/index'
 
 Vue.config.productionTip = false
 
 Vue.use(UIPlugins)
+// Vue.component(Confirm.name, Confirm)
+// Vue.prototype.$confirm = Confirm
 
 // Vue.use(Cube)
 

@@ -42,14 +42,14 @@
       },
       testPluginMessage () {
         this.$message({
-          msg:'测试1'
+          msg: '测试1'
         })
       },
       testPluginConfirm () {
         console.log('test')
         this.$confirm({
           title: 'title',
-          content:'测试2'
+          content: '测试2'
         })
       }
     }

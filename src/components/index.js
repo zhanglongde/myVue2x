@@ -1,5 +1,5 @@
-import Message from './common/Message/Message'
-import Confirm from './common/Confirm/Confirm'
+import Message from './common/message/Message'
+import Confirm from './common/confirm/Confirm'
 
 const install = function(Vue) {
   Vue.component(Confirm.name, Confirm)
