@@ -10,6 +10,7 @@ import VCell from '@/components/vux/VCell.vue'
 import VPopuppicker from '@/components/vux/VPopuppicker.vue'
 import VPicker from '@/components/vux/VPicker.vue'
 import Picker from '@/components/cube/Picker.vue'
+import Echarts from '@/components/echarts/echarts.vue'
 
 Vue.use(Router)
 
@@ -64,6 +65,11 @@ export default new Router({
       path: '/cube/piker',
       name: 'piker',
       component: Picker
+    },
+    {
+      path: '/echarts',
+      name: 'Echarts',
+      component: Echarts
     }
   ]
 })
