@@ -3,6 +3,7 @@ var utils = require('./utils')
 var config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
 const vuxLoader = require('vux-loader')
+var svgoConfig = require('../svgo-config.json')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -29,6 +30,11 @@ const originalConfig = {
   module: {
     rules: [
       {
+        test: /\.svg$/,
+        loader: ['svg-sprite-loader'],
+        include: [path.resolve(__dirname, '../src/assets/icons')]
+      },
+      {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: vueLoaderConfig
@@ -41,6 +47,9 @@ const originalConfig = {
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
+        exclude: [
+          path.resolve(__dirname, '../src/assets/icons'),
+        ],
         options: {
           limit: 10000,
           name: utils.assetsPath('img/[name].[hash:7].[ext]')

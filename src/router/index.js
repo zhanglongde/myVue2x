@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '@/views/Index'
+import IconIndex from '@/views/IconIndex'
 import Hello from '@/views/Hello'
 import AddCard from '@/components/exe/AddCard.vue'
 // import Summernote from '@/components/editor/summernote.vue'
@@ -20,6 +21,11 @@ export default new Router({
       path: '/',
       name: 'Index',
       component: Index
+    },
+    {
+      path: '/icon',
+      name: 'IconIndex',
+      component: IconIndex
     },
     {
       path: '/addcard',
