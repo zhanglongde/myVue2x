@@ -31,8 +31,17 @@ const originalConfig = {
     rules: [
       {
         test: /\.svg$/,
-        loader: ['svg-sprite-loader'],
-        include: [path.resolve(__dirname, '../src/assets/icons')]
+        // loader: ['svg-sprite-loader'],
+        include: [path.resolve(__dirname, '../src/assets/icons')],
+        use: [
+          {
+            loader: 'svg-sprite-loader'
+          }
+          // {
+          //   loader: 'svgo-loader',
+          //   options: svgoConfig
+          // }
+        ]
       },
       {
         test: /\.vue$/,
